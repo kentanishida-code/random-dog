@@ -3,11 +3,8 @@
 import { useState } from "react";
 import { fetchImage } from "./fetch-image";
 import styles from "./page.module.css";
- 
-type DogImageProps = {
-  message: string;
-};
- 
+import { DogImageProps } from "@/types/DogImageType";
+
 export function DogImage({ message }: DogImageProps) {
   const [imageUrl, setImageUrl] = useState(message);
  
